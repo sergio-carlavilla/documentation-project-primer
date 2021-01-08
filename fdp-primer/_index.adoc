@@ -1,0 +1,35 @@
+---
+title: FreeBSD Documentation Project Primer for New Contributors
+authors:
+  - author: The FreeBSD Documentation Project
+copyright: 1998-2021 DocEng
+releaseinfo: "$FreeBSD$" 
+trademarks: ["general"] 
+next: books/fdp-primer/preface
+---
+
+= FreeBSD Documentation Project Primer for New Contributors
+:doctype: book
+:toc: macro
+:toclevels: 1
+:icons: font
+:sectnums:
+:sectnumlevels: 6
+:experimental:
+
+include::share/releases.adoc[]
+include::share/en/mailing-lists.adoc[]
+
+[.abstract-title]
+Abstract
+
+Thank you for becoming a part of the FreeBSD Documentation Project. Your contribution is extremely valuable, and we appreciate it.
+
+This primer covers details needed to start contributing to the FreeBSD Documentation Project, or FDP, including tools, software, and the philosophy behind the Documentation Project.
+
+This is a work in progress. Corrections and additions are always welcome.
+
+'''
+
+toc::[]
+
