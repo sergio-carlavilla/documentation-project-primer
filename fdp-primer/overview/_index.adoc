@@ -42,25 +42,18 @@ Some preparatory steps must be taken before editing the FreeBSD documentation. F
 
 [.procedure]
 ====
-. Install these packages: package:gohugo[], package:python37[], package:ruby[] and Git. These packages are all of the software needed to edit and build FreeBSD documentation. The Git package is needed to obtain a working copy of the documentation and generate patches with.
+. Install these packages. These packages are all of the software needed to edit and build FreeBSD documentation. The Git package is needed to obtain a working copy of the documentation and generate patches with.
 +
 [source,bash]
 ....
-# pkg install gohugo python3 ruby26-gems git-lite po4a
-....
-+
-and then install `asciidoctor` and `asciidoctor-rouge` with ruby gems
-+
-[source,bash]
-....
-# gem install asciidoctor asciidoctor-rouge
+# pkg install gohugo python3 git-lite rubygem-asciidoctor rubygem-rouge
 ....
 +
 . Optional: to generate PDF documentation install `asciidoctor-pdf`
 +
 [source,bash]
 ....
-# gem install asciidoctor-pdf
+# pkg install rubygem-asciidoctor-pdf 
 ....
 +
 . Hugo currently does not have support for the use of custom AsciiDoctor extensions. So a little UNIX trickery should be made until Hugo allow the use of custom extensions.
