@@ -56,30 +56,6 @@ Some preparatory steps must be taken before editing the FreeBSD documentation. F
 # pkg install rubygem-asciidoctor-pdf 
 ....
 +
-. Hugo currently does not have support for the use of custom AsciiDoctor extensions. So a little UNIX trickery should be made until Hugo allow the use of custom extensions.
-+
-.. Rename `asciidoctor` binary to `custom-asciidoctor`
-+
-[source,bash]
-....
-# mv /usr/local/bin/asciidoctor /usr/local/bin/custom-asciidoctor
-....
-+
-.. Create a file located in the old binary path with these content
-+
-[.programlisting]
-....
-#!/bin/sh
-/usr/local/bin/custom-asciidoctor -r ~/doc/shared/lib/man-macro -r ~/doc/shared/lib/packages-macro -r ~/doc/shared/lib/sectnumoffset-treeprocessor -r ~/doc/shared/lib/inter-document-references-macro "$@"
-....
-+
-.. Set the correct permissions
-+
-[source,bash]
-....
-chmod +x /usr/local/bin/asciidoctor
-....
-+
 . Install a local working copy of the documentation from the FreeBSD repository in [.filename]#~/doc# (see <<working-copy>>).
 +
 [source,bash]
